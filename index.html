@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Coin Website</title>
+  
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet"/>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css" rel="stylesheet" />
+ 
+
+  <link href="./css/style.css" rel="stylesheet">
+
+
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" class="bg-brand-dark" text-white-500">
+    <main>
+      <nav class="navbar navbar-expand-lg navabar-light bg-brand-dark  sticky-top">
+          <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#"><b class="text-light"><i class= "bx bx-unite text-light"></i>Angry<span>Rabbit.</span></b></a>
+          <div class="d-flex">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bx bx-menu bx-md"></span>
+            </button>
+          <a href="./PP_Login Form/index.html" id="login " class="btn btn-login sc-login-btn ms-sm-3">Login</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a href="#hero-slider" class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <!-- <li class="nav-item"><a href="#home" class="nav-link">Home</a></li> -->
+              <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+              <li class="nav-item"><a href="#portfolio" class="nav-link">Portfoilo</a></li>
+              <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+              <a href="" class="btn btn-brand ms-lg-3  sc-contact-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</a>
+          </ul>
+          <a href="./PP_Login Form/index.html" id="login" class="btn btn-login ms-lg-3">Login</a>
+          </div>
+          </div> 
+      </nav>
+        <!-- navbar ends / -->
+
+
+
+        <!-- slider section -->
+        <div class="slider-wrapper owl-carousel owl-theme" id="hero-slider">
+          <div class="slide1 min-vh-100 j-bg-cover  d-flex align-items-center" id="mobile-sl">
+            <div class="container">
+             <div class="row">
+                <div class="col-12 slider-font">
+                  <h5 class="navbar-brand text-white"><b class="text-light"><i class="bx bx-unite text-light"></i>Angry<span>Rabbit</span></b></h5>  
+                  <h1 class="display-2 d-text1 fw-700  banner-font  my-3 text-white text-uppercase">Let's grow a Furtune <br/>that money Healing</h1> 
+                  <a href="./PP_Login Form/index.html" class="btn-brand btn">Get Started</a> 
+                  <!-- <a href="" class="btn btn-primary ms-md-3"></a>  -->
+                </div>
+               </div> 
+            </div>
+          </div>  
+
+          <div class="slide2 min-vh-100 j-bg-cover  d-flex align-items-center" id="mobile-sl">
+            <div class="container">
+             <div class="row">
+                <div class="col-12 text-center slider-font">
+                  <h6 class="text-uppercase text-white">Hepling people<br/>12000M+</h6>  
+                  <h1 class="display-2 d-text2 fw-700  banner-font my-3 text-white text-uppercase">A new Path to financial Freedom</h1> 
+                  <a href="" class="btn btn-brand">Get Started</a> 
+                  <a href="" class="btn btn-outline-light ms-md-3">Our Works</a> 
+                </div>
+               </div> 
+            </div>
+          </div> 
+
+          <div class="slide3 min-vh-100 j-bg-cover d-flex align-items-center" id="mobile-sl">
+            <div class="container">
+             <div class="row">
+                <div class="col-12 text-center slider-font">
+                  <h6 class="text-uppercase text-white">Over 400 <br/>countries world wide</h6>  
+                  <h1 class="display-2 d-text3 fw-700 banner-font my-3 text-white text-uppercase">Investing and growing green for the future</h1> 
+                  <a href="./PP_Login Form/index.html" class="btn btn-brand">Get Started</a> 
+                  <a href="about" class="btn btn-outline-light ms-md-3">Our Works</a> 
+                </div>
+               </div> 
+            </div>
+          </div>
+        </div>
+        <!-- Carosuel ends -->
+        <style>
+          .fw-700{
+            font-weight: 700 !important;
+          }
+          .banner-font{
+            font-family: "somehing here" !important;
+          }
+        </style>
+
+        <!-- coin prices slides -->
+        <div class="container">
+        <div class="pt-2 mt-4" style="
+    height: 62px;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #56667f;
+    border-radius: 4px;
+    text-align: right;
+    line-height: 14px;
+    block-size: 62px;
+    font-size: 12px;
+    font-feature-settings: normal;
+    text-size-adjust: 100%;
+    box-shadow: inset 0 -15px 0 0 var(--main-color);
+    padding: 1px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;">
+
+  <div style="height: 40px; padding: 0px; margin: 0px; width: 100%">
+    <iframe
+      src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover="
+      width="100%"
+      height="36px"
+      scrolling="auto"
+      marginwidth="0"
+      marginheight="0"
+      frameborder="0"
+      border="0"
+      style="border: 0; margin: 0; padding: 0"
+    ></iframe>
+  </div>
+  <div
+    style="
+      color: #ffffff;
+      line-height: 14px;
+      font-weight: 400;
+      font-size: 11px;
+      box-sizing: border-box;
+      padding: 2px 6px;
+      width: 100%;
+      font-family: Verdana, Tahoma, Arial, sans-serif;">
+    
+    <a href="https://coinlib.io"
+      target="_blank"
+      style="
+        font-weight: 500;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 11px;
+      "
+      >Current Cryptocurrency Prices</a>
+    >&nbsp;by AngryRabbit
+</div></div></div>
+      <!-- coin prices slides / -->
+
+
+        <!-- About us section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 intro text-center">
+            <h6 class="headline-md ">What We Provide and Who we are?</h6>
+            <p class="author">AngryRabbit™ is a <span class="text-lowercase">Cryptocurrency coin launch website aiming towards the goal of making it easier for you to live that dream life when you buy and liquidate, helping people stand a chance of escaping the rabbit hole.</span></p>
+          </div>
+          <div class="row gy-5">
+            <div class="col-lg-4 col-sm-6 about-text">              
+               <h5 class="gainIntro ab-text3 title-lg  text-white mb-4">[1] High Pay</h5>
+               <p class="abu-p body-md"> Not only do we but also, lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolor!</p>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 about-text">              
+               <h5 class="gainIntro ab-text3 title-lg text-white mb-4">[2] High Scalability</h5>
+               <p class="abu-p body-md"> Scalability and accountabilty we but also  , lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolor!</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 about-text">              
+              <h5 class="gainIntro ab-text3 title-lg  text-white mb-4">[3] High Profit Margin</h5>
+              <p class="abu-p body-md">Our team of professionals, are dedicated towards reaching a high profit margin dominating the crypto industry becoming  matchable to Major Coins in the market ... sit amet consectetur adipisicing elit. Corrupti, dolor!</p>
+           </div>
+           </div>
+            <!-- this div up should rep the last box and the next div should be 4 de row  -->
+        </div>
+      </div>
+    </section>
+        <!-- About us ends / -->
+
+        <!-- Our countdown section -->
+        <section id="countDown" class="j-bg-cover">
+          <div class="container">
+            <div class="row">
+            <div class="col-lg-12 col-sm-12  p-4">
+              <center class="headline-lg mb-4 text-white" id="counter-text">Enter the Metaverse with <span class="text-white"><i class="bx bx-unite"></i></span>Angry Rabbit</center>
+              <center class="headline-lg mb-4" id="C-numbers">60,324,500,040</center>
+              <center class="mb-0 mt-2 text-light text-center">currently in distribution</center>
+            </div>
+            </div>
+          </div>
+        </section>
+        <!-- Our countdown section ends/-->
+
+    
+        <!-- Our services section -->
+        <section id="services" class="j-bg-cover">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 intro text-center">
+                <h6 class="header-text">What We do?</h6>
+                <p>Cryptography and Cryptocurrency investment aids and servicesmaking nit easier for you to live that dream life.</p>
+              </div>
+              <div class="row gy-5">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="service-box position-relative">
+                  <p class="d-flex service-tag position-absolute">classic</p>
+                  <i class="bx bxs-network-chart bx-lg provide-icon"></i>
+                   <h5 class="title-sm">Large Networks</h5>
+                   <p class="body-md"> Not only do we but also, have acquired a large Network  of investors, overthe years plus or solid level of experience</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="service-box position-relative">
+                    <p class="d-flex service-tag position-absolute">Promise and never Fail</p>
+                    <i class="bx bxs-vector bx-lg provide-icon"></i>
+                   <h5 class="title-sm">Blockchain solutions</h5>
+                   <p class="body-md"> Full market ready and experienced team of crypto programmers,
+                     no only bein expert traders but also trusted and battle tested 
+                   </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="service-box position-relative">
+                    <p class="d-flex service-tag position-absolute">All in One</p>
+                   <i class="bx bxs-meteor bx-lg provide-icon"></i>
+                   <h5 class="title-sm">Future plans and evolution rising</h5>
+                   <p class="body-md"> In the blockchain cryptocurrency and electronic Industries, our Networksof Professionals
+                     and seasoned crypto team has had the oppurtunity to streach and lorem ipsum dolor sit amet.
+                   </p>
+                  </div>
+                </div>
+               </div>
+                <!-- this div up should rep the last box and the next div should be 4 de row  -->
+            
+            </div>
+          </div>
+        </section>
+       <!-- Our services section ends /-->
+
+
+    <!-- coin graph section -->
+    <div class ="container">
+	<h4 class="headline-md text-white">L<span class="graph-span">ive </span>Bit<span class="graph-span">coin</span> Pr<span class="graph-span">ice</span></h4>
+    </div>
+    <div class="container" id="">
+      <div style="height:560px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:540px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Your Cryptocurrency Prices</a>&nbsp;by AngryRabbit</div></div>
+      </div>
+      <!-- ends coin graph section/ -->
+        <style> .graph-span{color: var(--main-color)}</style>
+       
+        <!-- portfolio section -->
+        <section id="portfolio" class="j-bg-cover">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 intro text-center">
+                <small>We Are Capable</small>
+                <h6>With Years of Experience Under Our Belts</h6>
+                <p class="text-lowercase">Contrary to Popular belief Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem?</p>
+              </div>  
+            </div>
+          </div>
+
+          <div id="project-slider" class="owl-theme owl-carousel">
+          <div class="project">
+            <img src="./images/family.jpg" alt="slide image"/>
+            <div class="overlay"></div>
+            <div class="proj-content">
+              <!-- <h1>Project Title</h1> -->
+              <h6>We care</h6>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./images/office2.jpg" alt="slide image"/>
+            <div class="overlay"></div>
+            <div class="proj-content">
+              <!-- <h1>Project Title</h1>-->
+              <h6>We share</h6> 
+            </div>
+          </div>
+          <div class="project">
+            <img src="./images/office.jpg" alt="slide image"/>
+            <div class="overlay"></div>
+            <div class="proj-content">
+              <!-- <h1>Project Title</h1>-->
+              <h6>We deliver</h6> 
+            </div>
+          </div>
+          <!-- latter add or duplacte the project 3 more times wi
+          wif different images and texts -->
+          </div>
+        </section>
+       <!-- ends portfolio section  /-->
+
+       <!-- reachout/ad-ons  section info-->
+    <div id="reachout" class="">
+      <div class="container">
+        <div class="row gy-3">
+        <div class="col-lg-4">
+          <div class="info-card p-3">
+            <i id="info-icon" class="bx bx-support bx-lg mb-3"></i>
+            <div class="text-white">
+              <b><h6 class="title-sm text-white">Live Chat</h6></b>
+              <p class="body-md">you could chat with us and take free guide and consultation throught our 
+                live chat system
+              </p>
+            </div> 
+          </div>
+          <style>
+            #info-icon{
+            background: var(--main-color);
+            box-shadow: 3px 3px 1rem var(--main-color);
+            color: #fff !important;
+            padding: 9px 9px;
+            }
+          </style>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="info-card p-3">
+              <i id="info-icon" class="bx bx-bitcoin bx-lg mb-3"></i>
+              <div class="text-white ">
+                <b><h6 class="title-sm text-white">Fast Payment</h6></b>
+                <p class="body-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consequatur voluptate nulla!</p>
+              </div> 
+            </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info-card p-3">
+                <i id="info-icon" class="bx bx-user-plus bx-lg p-2 mb-3"></i>
+                <div class="text-white">
+                  <b><h6 class="title-sm text-white">Email support</h6></b>
+                  <p class="body-md">An Email action could be tiggered from this website making it possible to recieve cllients email from your website to your phone
+                  </p><small>:Disabled for demo purposes</small>
+                </div> 
+              </div>
+              </div>
+    </div>
+    </div>
+    </div>
+    <!-- reachout section Info/ -->
+
+      <!-- investHero section -->
+      <section class="" id="investHero" class="mb-4">
+        <div class="">
+          <div class="i-hero-banner position-relative  j-bg-cover img-fluid">
+          <div class="i-hero-image position-absolu pt-4 text-center">
+          <h1 class="display-3 inv-h1 text-white  mb-6">Invest With Confidence</h1>
+          <span class=" inv-span text-white">your financial future dosen't deserve to go down the wrong <span style="color: var(--main-color);">Rabbit hole</span></span>
+          <img src="./images/about-banner.png" id="inv-image"class="mt-4 img-fluid mx-auto" alt="investment-image">
+        </div>
+        </div>
+
+      </section>
+      <!-- Reviews -->
+      <section id="reviews" class="j-bg-cover">
+        <div class="owl-carousel owl-theme" id="reviews-slider">
+          <div class="review">
+            <img src="./images/avatar1.png" alt=""> 
+            <h4>John La Doe</h4>
+            <small>Web Developer</small>
+            <p class="review-speech"><span class="quoat-mark">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illo officiis impedit repudiandae iusto nobis, rem eum itaque voluptatem, repellat maxime? Ratione esse accusantium tenetur cum ma
+              gnam, quasi veritatis alias fugit ducimus.<span class="quoat-mark">"</span></p>
+             
+              <div class="rv-stars">
+                <a href=""><i class="bx bxs-star"></i></a>
+                <a href=""><i class="bx bxs-star"></i></a>
+                <a href=""><i class="bx bxs-star"></i></a>
+                <a href=""><i class="bx bxs-star"></i></a>
+                <a href=""><i class="bx bxs-star"></i></a>
+          </div></div>
+          <div class="review">
+            <img src="./images/avatar5.jpg" alt=""> 
+            <h4>Diane Rose</h4>
+            <small>Cryto analyist</small>
+            <p class="review-speech"><span class="quoat-mark">"</span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illo officiis impedit repudiandae iusto nobis, rem eum itaque voluptatem, repellat maxime? Ratione esse accusantium tenetur cum ma
+              gnam, quasi veritatis alias fugit ducimus.<span class="quoat-mark">"</span></p>
+          
+              <div class="rv-stars">
+                <a href=""><i class="bx bxs-star"></i></a>
+                <a href=""><i class="bx bxs-star"></i></a>
+                <a href=""><i class="bx bxs-star"></i></a>
+                <a href=""><i class="bx bxs-star"></i></a>
+                <a href=""><i class="bx bxs-star"></i></a>
+          </div>
+        </div>
+          <!-- duplicate me ? 3: 4 :2 more times -->
+        </div>
+      </section>  
+        <!-- Reviews end/-->
+       
+      <!--Outro post-->
+      <section class="bg-brand-dark">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-12 intro text-center">
+          <h6 class="h1 author">Crypto themed website</h6> 
+          <h4 class="author2">by Dev:['Jomei'].</h4>
+          <center class="author"><small>->jomeidev@gmail.com<- </small></center>
+        </div>
+        </div> 
+      
+      </div>
+      </section>
+        <!--Outro ends /-->
+    </main>  
+        <!-- Footer -->
+    <footer class="container-fluid">
+    <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-4 pt-4">
+          <h1 class="navbar-brand text-white"><b class="text-light"><i class="bx bx-unite text-light"></i>Angry<span>Rabbit</span></b></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing el
+            it. Possimus quae blanditiis quaerat.</p>
+          <div class="social-links">
+              <a href=""><i class="bx bxl-facebook"></i></a>
+              <a href=""><i class="bx bxl-twitter"></i></a>
+              <a href=""><i class="bx bxl-github"></i></a>
+              <a href=""><i class="bx bxl-instagram"></i></a>
+              <a href=""><i class="bx bxl-youtube"></i></a>
+            </div>  
+        </div>
+        <div class="col-sm-12 col-lg-2 pt-4">
+          <h1 class="navbar-brand text-white">Fast links</h1>
+          <ul class="d-flex flex-column  p-0">
+           <li>Team</li>
+           <li>Resources</li>
+           <li>Waitlist</li>
+           <li>Coin base</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-lg-3 pt-4">
+          <h1 class="navbar-brand text-white">Suscribe to us</h1>
+          <form class="form-row d-flex" action="">
+            <div class="col">
+            <input type="text" placeholder="example@gmail.com" class=" form-control text-lowercase" required>
+            </div>
+            <div class="col">
+            <button class="btn btn-brand footer-btn mx-2">Send</button>  
+            </div>
+          </form>
+          <p class="pt-1 text-capitalize">To get updates on coin disbursemt.</p>
+          
+        </div>
+        <div class="col-sm-12 col-lg-3 pt-4">
+          <h1 class="navbar-brand text-white">Get our apps</h1>
+          <div class="app-store">
+          <!-- <div class="app-store-i"> -->
+         <img src="./images/app-store.svg"  class="img-fluid app-store-img"   alt="app-store">
+        <!-- </div> -->
+         <img src="./images/google-play.svg" id="a-store-2" class="img-fluid app-store-img"   alt="google-play">
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+    <a href="https://jomeiibe.github.io/main-j" target="_blank" class="mb-0 d-flex justify-content-center text-light">Copyright &copy; <span class="color-primary">Jomei 2023.</span> All Rights Reserved</p></div>
+  </div>
+  </footer>
+    <!-- Footer ends-->
+  
+
+   <!-- Modal section -->
+   <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="exampleModal">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div> -->
+        <div class="modal-body p-0">
+          <div class="container-fluid">
+          <div class="row">
+          <div class="col-lg-4 j-bg-cover" style="background-image: url(./images/avatar4.jpg); min-height: 300px;"></div>
+          <div class="col-lg-8">
+            <form action="" class="row p-lg-5 gy-3" method="post">
+              <h1>Get In Touch</h1>
+              <p class="text-lowercase">We will be sure to reach you prior to dolor sit, amet consectetur adipisicing elit. Quaerat aut, sunt, voluptatibus iste consectetur, dignissimos fugiat aperiam veniam doloribus suscipit explicabo neque maiores odio quia dic
+                ta ducimus quam quas iure?</p>
+              <div class="col-lg-6">
+                <!-- <div class="form-group"> -->
+                <label for="" class="form-label">First Name</label>
+                <input type="Text" class="form-control" placeholder="John" required>
+              <!-- </div> -->       
+              </div>
+              <div class="col-lg-6">
+                <label for="" class="form-label">Last Name</label>
+                <input type="Text" class="form-control" placeholder="Doe">
+              </div>
+              <div class="col-12 col-lg-6">
+                <label for="" class="form-label">Email</label>
+                <input type="Email" class="form-control" placeholder="johndoe@gmail.com" required>
+              </div>
+              <div class="col-lg-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="leave a message" required></textarea>
+              </div>
+              <!-- <button type="submit" class="btn btn-brand">Send Message</bjutton> -->
+            </form>
+          </div>
+          </div><!-- row div ends -->
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-brand">Send Message</button>            
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="bx bx-home"></i></button>
+        </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+<!-- !cet -->
+  <!------jquery ---->
+   <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+
+  <!-- =bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+ <!-- ??Owl carousel js -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+ <script  src="./js/costom.js"></script>
+ 
+
+
+
+  <!-- delete links -->
+    <!-- <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/proctected/jquery/jquery-3.6.0.slim.min.js"></script>
+    <script src="./js/proctected/owl.carousel.min.js"></script> -->
+    <!-- owl or swipper link here -->
+</body>
+</html>
